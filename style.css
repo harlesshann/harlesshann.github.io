@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.7) , rgba(0,0,0,0.7)) , url(images/IMG-20230627-WA0048.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    padding-left: 19px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    font-weight: 600;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    flex-wrap:unset;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 201px;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+button{
+    width: 150px;
+    color: #000;
+    font-size: 10px;
+    padding: 12px 20px;
+    background: #fff;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #333; /* Mengubah warna latar saat hover */
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/pic-1.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/IMG-20230627-WA0052.jpg);
+}
+.card2{
+    background-image: url(images/IMG-20230627-WA0076.jpg);
+}
+.card3{
+    background-image: url(images/IMG-20230627-WA0090.jpg);
+}
+.card4{
+    background-image: url(images/IMG-20230627-WA0122.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.a{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom untuk perangkat mobile */
+        gap: 20px; /* Menambahkan jarak antar elemen */
+    }
+
+    .col {
+        flex-basis: 100%; /* Mengisi lebar layar penuh */
+    }
+
+    .card {
+        width: calc(100% - 30px); /* Mengisi lebar layar penuh */
+        margin: 0 auto 20px; /* Menghapus margin */
+    }
+}
